@@ -41,6 +41,14 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
+        <ol>
+          {
+            this.cityList.map((value,index) =>{
+            if(value.country === 'India' )
+            return <li key={index}>{value.name}</li>;
+            })
+          }
+        </ol>
       </div>
     )
   }
